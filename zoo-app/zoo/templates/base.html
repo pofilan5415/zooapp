@@ -14,16 +14,20 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-8 main-col-left">
-                    <nav class="nav justify-content-center">
-                        <a class="nav-link active" aria-current="page" href="{{ url_for('main.index') }}">HOME</a>
-                        <a class="nav-link" href="#">OUR ANIMALS</a>
-                        <a class="nav-link" href="#">BOOK ACTIVITIES</a>
-                        <a class="nav-link" href="#">SCHEDULE</a>   
-                        <a class="nav-link" href="#">FAQ</a>
-                      </nav>
+                    {% include 'navbar_template.html' %}
+                    <div class="welcome-headers">
+                        <div id="welcome-text">Welcome To<br>Spain's Top Zoo</div>
+                        <div id="sub-welcome-text">Introducing a zoo like no other. This zoo will make <br> your animal dreams come to life.</div>
+                        <a id="sign-up-link-text" href="#">SIGN UP TO VISIT TODAY!</a>
+                    </div>
                 </div>
-                <div class="col-4 vh-100 px-lg-0">
+                <div class="col-4 px-lg-0 main-col-right">
                     <img class="giraffe-img" src="https://source.unsplash.com/UqB0TfIdqNE" alt="giraffe">
+                    <div class="sign-button-container">
+                        <button type="button" class="btn btn-primary btn-lg sign-in-button">SIGN IN</button>
+                        <button type="button" class="btn btn-primary btn-lg sign-up-button">SIGN UP</button>
+                    </div>
+                    
                     <!--
                         <section class="content">
                         {% block content %}{% endblock %}

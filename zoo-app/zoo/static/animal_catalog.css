@@ -1,0 +1,58 @@
+/*
+PRIMARY BRAND COLORS:
+
+#8D8741
+#659DBD
+#DAAD86
+#BC986A
+#FBEEC1
+*/
+
+body {
+    background-color: #FBEEC1;
+}
+
+#animal-main-text {
+    font-family: 'Rubik';
+    font-size: 3.05vw;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.74);
+
+    margin-top: 40%;
+    margin-left: 20%;
+    margin-bottom: 12%;
+}
+
+.animal-category {
+    margin-bottom: 7%;
+    color: #BC986A;
+}
+
+.animal-category:hover {
+    color: #8D8741;
+}
+
+.animal-category-group {
+    font-family: 'Rubik';
+    font-size: 1.2vw;
+
+    margin-left: 17%;
+}
+
+.animal-cards {
+    margin-top: 6%;
+}
+
+.card-details {
+    font-family: 'Rubik';
+    background-color: #DAAD86;
+}
+
+.card-title {
+    font-weight: 600;
+}
+
+.card {
+    border-color: #FBEEC1;
+    cursor: pointer;
+}

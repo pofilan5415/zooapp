@@ -1,0 +1,32 @@
+body {
+    background-color: #FBEEC1;
+}
+
+#faq-header-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 5%;
+
+    font-family: 'Rubik';
+    font-size: 5.05vw;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.74);
+}
+
+.accordion {
+    width: 50%;
+    margin-left: 26%;
+    margin-top: 2%;
+}
+
+.accordion-button {
+    font-family: 'Rubik';
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.74)
+}
+
+.nav {
+    margin-top: -1.5%;
+}

@@ -1,7 +1,7 @@
 import datetime
 import dateutil.tz
 
-from flask import Blueprint, render_template
+from flask import Blueprint, render_template, request
 
 
 from . import model
@@ -43,3 +43,25 @@ def faq():
     faq_items = [item1, item2]
 
     return render_template("", faq_items=faq_items)
+
+@bp.route("/animal-info")
+def animal_info():
+    animal_name = request.args.get('animal', None)
+
+    polar_bear = model.Animal(1, "Polar Bear", "Ursus", "A very, very scary animal!", "https://source.unsplash.com/qQWV91TTBrE")
+    brown_bear = model.Animal(2, "Brown Bear", "Ursus", "A very, very scary animal!", "https://source.unsplash.com/y421kXlUOQk")
+    tiger = model.Animal(3, "Tiger", "Ursus", "A very, very scary animal!", "https://source.unsplash.com/opnyo_F5l3o")
+    snake = model.Animal(4, "Snake", "Ursus", "A very, very scary animal!", "https://source.unsplash.com/o1bdnLXC5NM")
+    toucan = model.Animal(5, "Toucan", "Ursus", "A very, very scary animal!", "https://source.unsplash.com/cfIcTiopin4")
+    shark = model.Animal(6, "Shark", "Ursus", "A very, very scary animal!", "https://source.unsplash.com/GBDkr3k96DE")
+
+    animals = {
+        "Polar Bear": polar_bear,
+        "Brown Bear": brown_bear, 
+        "Tiger": tiger, 
+        "Snake": snake, 
+        "Toucan": toucan,
+        "Shark": shark
+    }
+
+    return render_template("main/animal-info.html", animal=animals[animal_name])

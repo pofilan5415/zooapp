@@ -12,10 +12,12 @@ class User:
         self.name = name
 
 class Animal:
-    def __init__(self, animal_id, name, genus, description=None, img_src=None):
+    def __init__(self, animal_id, name, genus, diet, habitat, description=None, img_src=None):
         self.animal_id = animal_id
         self.name = name
         self.genus = genus
+        self.diet = diet
+        self.habitat = habitat
         self.description = description
         self.img_src = img_src
 
@@ -24,3 +26,10 @@ class FaqItem:
         self.faq_id = faq_id
         self.title = title
         self.description = description
+
+class Activity:
+    def __init__(self, name, description, img_src, time=None):
+        self.name = name
+        self.description = description
+        self.img_src = img_src
+        self.time=time

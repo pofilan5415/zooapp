@@ -21,6 +21,13 @@ class Faq(db.Model):
     title = db.Column(db.String(128), nullable=False)
     description = db.Column(db.String(1000), nullable=False)
 
+class Activity(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    name = db.Column(db.String(128), unique=True, nullable=False)
+    description = db.Column(db.String(1000), nullable=False)
+    img = db.Column(db.String(1000), nullable=False)
+    time = db.Column(db.String(128), nullable=True)
+
 """
 class Message:
     def __init__(self, message_id, user, text, timestamp):
@@ -29,31 +36,11 @@ class Message:
         self.text = text
         self.timestamp = timestamp
 
-class User:
-    def __init__(self, user_id, email, name):
-        self.user_id = user_id
-        self.email = email
-        self.name = name
-
-class Animal:
-    def __init__(self, animal_id, name, genus, diet, habitat, description=None, img_src=None):
-        self.animal_id = animal_id
-        self.name = name
-        self.genus = genus
-        self.diet = diet
-        self.habitat = habitat
-        self.description = description
-        self.img_src = img_src
-
-class FaqItem:
-    def __init__(self, faq_id, title, description):
-        self.faq_id = faq_id
-        self.title = title
-        self.description = description
-
 class Activity:
     def __init__(self, name, description, img_src, time=None):
         self.name = name
         self.description = description
         self.img_src = img_src
         self.time=time
+
+"""

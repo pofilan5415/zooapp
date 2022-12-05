@@ -18,21 +18,14 @@
                     <div class="welcome-headers">
                         <div id="welcome-text">Welcome To<br>Spain's Top Zoo</div>
                         <div id="sub-welcome-text">Introducing a zoo like no other. This zoo will make <br> your animal dreams come to life.</div>
-                        <a id="sign-up-link-text" href="#">SIGN UP TO VISIT TODAY!</a>
+                        <div>{% block signuplink %}{% endblock %}</div>
                     </div>
                 </div>
                 <div class="col-4 px-lg-0 main-col-right">
                     <img class="giraffe-img" src="https://source.unsplash.com/UqB0TfIdqNE" alt="giraffe">
                     <div class="sign-button-container">
-                        <button type="button" class="btn btn-primary btn-lg sign-in-button">SIGN IN</button>
-                        <button type="button" class="btn btn-primary btn-lg sign-up-button">SIGN UP</button>
+                        {% block loginbuttons %}{% endblock %}
                     </div>
-                    
-                    <!--
-                        <section class="content">
-                        {% block content %}{% endblock %}
-                    </section>
-                    -->
                 </div>
             </div>
         </div>

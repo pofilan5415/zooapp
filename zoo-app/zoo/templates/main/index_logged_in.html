@@ -1,0 +1,7 @@
+{% extends 'base.html' %}
+{% block loginbuttons %}
+<div class="welcome-username">{{current_user.username}} | 
+    <a class="logout-button" href="{{ url_for('auth.logout') }}" >LOGOUT</a></div>
+{% endblock %}
+{% block signuplink %}
+{% endblock %}

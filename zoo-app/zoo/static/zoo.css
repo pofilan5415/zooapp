@@ -138,3 +138,25 @@ PRIMARY BRAND COLORS:
     margin-left: 7%;
     white-space: nowrap
 }
+
+.welcome-username {
+    white-space: nowrap;
+    color: #BC986A;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-size: 1.15vw;
+    font-weight: 500;
+
+    margin-top: 14%;
+    margin-left: 135%
+}
+
+.logout-button {
+    text-decoration: none;
+    color: #BC986A;
+}
+
+.logout-button:hover {
+    text-decoration: none;
+    color: #BC986A;
+}

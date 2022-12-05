@@ -1,0 +1,91 @@
+
+body {
+    background-color: #FBEEC1;
+}
+
+.nav {
+    margin-top: -3%;
+}
+
+#main-reg-text {
+    margin-top: 15%;
+    margin-bottom: 2%;
+
+    font-family: 'Rubik';
+    font-size: 3.5vw;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.74);
+}
+
+.registration-sub-text {
+    margin-bottom: 5%;
+
+    font-family: 'Rubik';
+    font-size: 1vw;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.floating-label {
+    font-family: 'Rubik';
+    font-size: 1.05vw;
+    font-weight: 100;
+
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.form-text {
+    font-family: 'Rubik';
+    font-size: .9vw;
+    font-weight: 100;
+
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.submit-button {
+    font-family: 'Rubik';
+    font-weight: 100;
+    letter-spacing: .15em;
+
+    background-color: #8D8741;
+    color: white;
+    border-color: #8D8741;
+
+    padding: 2.5%;
+    margin-top: 2%;
+}
+
+.submit-button:hover {
+    font-family: 'Rubik';
+    font-weight: 100;
+    letter-spacing: .15em;
+
+    background-color: #8D8741;
+    color: white;
+    border-color: #8D8741;
+
+    padding: 2.5%;
+    margin-top: 2%;
+}
+
+.already-account-text {
+    text-align: center;
+    font-size: 1vw;
+
+    margin-top: 7%;
+}
+
+.sign-in-subtext {
+    text-decoration: none;
+    color: #8D8741;
+}
+
+.sign-in-subtext:hover {
+    text-decoration: none;
+    color: #8D8741;
+}
+
+.notification {
+    margin-top: -1.5%;
+    margin-bottom: 2%;
+    color: red;
+}

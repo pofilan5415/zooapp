@@ -1,0 +1,25 @@
+/*
+PRIMARY BRAND COLORS:
+
+#8D8741
+#659DBD
+#DAAD86
+#BC986A
+#FBEEC1
+*/
+
+.time-button {
+    background-color: #8D8741;
+    border-color: black;
+}
+.time-button:hover {
+    background-color: #DAAD86;
+}
+body {
+    background-color: #FBEEC1;
+}
+
+.activity-card {
+    border-color:#8D8741;
+    border-width: 2px;
+}

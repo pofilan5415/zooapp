@@ -1,0 +1,31 @@
+/*
+PRIMARY BRAND COLORS:
+
+#8D8741
+#659DBD
+#DAAD86
+#BC986A
+#FBEEC1
+*/
+
+body {
+    background-color: #FBEEC1;
+}
+
+.container-content {
+    margin-top: 5%;
+}
+
+
+.animal-image {
+   width: 100%;
+}
+
+.name {
+    font-family: 'Rubik';
+    font-size: 3.05vw;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.74);
+  }
+
+

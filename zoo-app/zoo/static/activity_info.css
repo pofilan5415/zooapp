@@ -1,0 +1,30 @@
+/*
+
+#8D8741
+#659DBD
+#DAAD86
+#BC986A
+#FBEEC1
+*/
+.dropdown-toggle {
+    background-color: #8D8741;
+    width: 150px;
+}
+.dropdown-toggle:hover {
+    background-color: #BC986A;
+}
+
+.submit-button {
+    display: none;
+    background-color: #8D8741;
+    width: 150px;
+}
+
+.submit-button:hover {
+    background-color: #BC986A;
+}
+
+.select-time-submit {
+    display: flex;
+    justify-content: space-between;
+}

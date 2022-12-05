@@ -5,5 +5,13 @@
         <h5 class="card-title">{{ animal.name }}</h5>
         <p class="card-text">{{ animal.description }}</p>
       </div>
+  <a href="{{ url_for('main.animal_info', animal=animal.name) }}" class="btn btn-fix h-100">
+    <div class="card shadow-lg h-100">     
+        <img src="{{ animal.img_src }}" class="card-img-top">
+        <div class="card-body card-details">
+          <h5 class="card-title">{{ animal.name }}</h5>
+          <p class="card-text">{{ animal.description }}</p>
+        </div>
     </div>
+  </a>
 </div>

@@ -11,10 +11,15 @@ def signup():
 
 @bp.route("/signup", methods=["POST"])
 def signup_post():
+    managerbox = request.form.get("managerbox")
     email = request.form.get("email")
     username = request.form.get("username")
     password = request.form.get("password")
-    print(email, flush=True)
+    if managerbox == "on":
+        is_manager = True
+    else:
+        is_manager = False
+    
     # Check that passwords are equal
     if password != request.form.get("password_repeat"):
         flash("The passwords you have entered are different.")
@@ -25,7 +30,7 @@ def signup_post():
         flash("Sorry, the email you provided is already registered.")
         return redirect(url_for("auth.signup"))
     password_hash = bcrypt.generate_password_hash(password).decode("utf-8")
-    new_user = model.User(email=email, username=username, password=password_hash)
+    new_user = model.User(is_manager=is_manager, email=email, username=username, password=password_hash)
     db.session.add(new_user)
     db.session.commit()
     return redirect(url_for("auth.login"))

@@ -40,8 +40,12 @@
                                 <button class="dropdown-item" onclick="showSubmit('16:00'); changeText('16:00')">16:00</button>
                             </div>
                         </div>
-                        <form method="post">
-                            <a type="btn" class="btn btn-secondary submit-button" id="submit-button" href="#">Submit Booking</a>
+                        <form action="{{ url_for('main.schedule') }}" method="post">
+                            <label for="date">Select date:</label>
+                            <input type="date" id="date" name="actdate" value="2022-12-22">
+                            <input type="hidden" name="actid" value="{{ activity.id }}">
+                            <input type="hidden" name="acttime" id="activity-time" value="12:00">     
+                            <button type="submit" class="btn btn-secondary submit-button" id="submit-button" >Submit Booking</button>
                         </form>
                     </div>  
                 </div>
@@ -53,7 +57,7 @@
                 //reveal submit button and change html to reflect correct time
                 console.log(time)
                 document.getElementById("submit-button").style.display = "inline"
-                document.getElementById("submit-button").setAttribute("href", "{{ url_for('main.schedule', t=time, activity=activity.name) }}")
+                document.getElementById("activity-time").setAttribute("value", time)
             }
 
             function changeText(time) {
